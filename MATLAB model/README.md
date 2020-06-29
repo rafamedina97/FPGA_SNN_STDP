@@ -1,4 +1,4 @@
-#MATLAB model
+# MATLAB model
 
 IF_STDP_MNIST_step.m contains the software model which served as starting point for the hardware implementation.
 
