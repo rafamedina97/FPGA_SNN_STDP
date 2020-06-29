@@ -1,0 +1,222 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+USE IEEE.numeric_std.all;
+
+use work.param_pkg.all;
+use work.rl_pkg.all;
+use work.log2_pkg.all;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Entity that coordinates the receptive layer and the SNN, and communicates with the exterior
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+entity general_control is
+    generic(
+        INPUT_LAYER_SIZE :  integer;
+        OUTPUT_LAYER_SIZE : integer
+    );
+    port(
+        reset :			  in std_logic;
+		clk :		      in std_logic;
+		-- Interface with the exterior
+		nxt_img_ready :   out std_logic;                                              -- Signals the uP that the rl is ready for a new image
+		valid_winner :    out std_logic;                                              -- Signals that the value of the winner neuron is valid
+		winner_neuron :   out std_logic_vector(log2c(OUTPUT_LAYER_SIZE)-1 downto 0);  -- Sends to the uP which was the winner neuron in learning for an image
+		-- Receptive layer
+        valid_period :    in std_logic;                                               -- Signal that the period received form rl is valid
+		period_in :       in period;                                                  -- Period received from the receptive layer        
+		rl_ready :        in std_logic;                                               -- Signals that the rl is ready for a new image
+	    rl_info :         in std_logic_vector(15 downto 0);                           -- Info output from the receptive layer
+		-- SNN
+		start_step :      out std_logic;                                              -- Signals the start of the computation of a simulation step
+		step_num :        out unsigned(STEPS_bits-1 downto 0);                        -- Number of the simulation step to compute 
+		step_finish :     in std_logic;                                               -- Signals the end of the step computation
+		spikes_out :      in std_logic_vector(OUTPUT_LAYER_SIZE-1 downto 0);          -- Spikes output for the step
+		period_store :    out std_logic;                                              -- Enables the storing of the periods in the input layer
+		period_out :      out period_vector(INPUT_LAYER_SIZE-1 downto 0)              -- Periods to store in the input layer
+    );
+end entity;
+
+architecture behaviour of general_control is 
+
+    type period_state is (idle, storing, wait_sim);
+    type SNN_state is (idle, sim_no_win, sim_win, end_sim);
+    
+    signal current_per_state, next_per_state : period_state;
+    signal current_SNN_state, next_SNN_state : SNN_state;
+    
+    signal period_cnt, next_period_cnt : unsigned(log2c(INPUT_LAYER_SIZE)-1 downto 0);
+    signal period_reg : period_vector(INPUT_LAYER_SIZE-1 downto 0);
+    signal sim_active, period_reg_en, start_sim, ctrl_rdy : std_logic;
+    signal next_sim_active, next_start_sim, next_per_store, next_ctrl_rdy, next_start_step, next_valid_winner : std_logic;
+    signal step_num_reg, next_step_num : unsigned(STEPS_bits-1 downto 0);
+    signal next_winner, winner_neuron_reg : std_logic_vector(log2c(OUTPUT_LAYER_SIZE)-1 downto 0);
+
+begin
+
+    proc_reg : process(clk, reset)
+    begin
+        if reset = '0' then
+            -- Registers of the period FSM
+            current_per_state <= idle;
+            start_sim <= '0';
+            period_store <= '0';
+            ctrl_rdy <= '1';
+            period_cnt <= (others => '0');
+            period_reg <= (others => (others => '0'));
+            -- Register of the SNN FSM
+            current_SNN_state <= idle;
+            start_step <= '0';
+            sim_active <= '0';
+            step_num_reg <= (others => '0');
+            valid_winner <= '0';
+            winner_neuron_reg <= (others => '0');
+        elsif clk'event and clk = '1' then
+            -- Registers of the period FSM
+            current_per_state <= next_per_state;
+            start_sim <= next_start_sim;
+            period_store <= next_per_store;
+            ctrl_rdy <= next_ctrl_rdy;
+            period_cnt <= next_period_cnt;
+            if valid_period = '1' and period_reg_en = '1' then
+                period_reg(to_integer(period_cnt)) <= period_in;
+            end if;
+            -- Register of the SNN FSM
+            current_SNN_state <= next_SNN_state;
+            start_step <= next_start_step;
+            sim_active <= next_sim_active;
+            step_num_reg <= next_step_num;
+            valid_winner <= next_valid_winner;
+            winner_neuron_reg <= next_winner;
+        end if;    
+    end process;
+
+--    proc_ext : process()  -- Process for managing the communication with the uP
+--    begin
+    
+--    end process;
+
+    -- Process for receiving and storing the periods generated by the receptive layer
+    proc_period : process(current_per_state, valid_period, period_cnt, sim_active, start_sim, period_store, ctrl_rdy, rl_ready)
+    begin
+        next_per_state <= current_per_state;
+        next_start_sim <= '0';
+        next_per_store <= '0';
+        next_ctrl_rdy <= ctrl_rdy;
+        period_reg_en <= '0';
+        next_period_cnt <= period_cnt;
+        case current_per_state is
+            when idle =>        -- Waits for the first period to arrive
+                if valid_period = '1' then
+                    period_reg_en <= '1';
+                    next_period_cnt <= period_cnt + 1;
+                    next_per_state <= storing;
+                end if;
+                if rl_ready = '0' then
+                    next_ctrl_rdy <= '0';
+                end if;
+            when storing =>     -- Stores the periods when they arrive
+                if valid_period = '1' and period_cnt < INPUT_LAYER_SIZE-1 then
+                    period_reg_en <= '1';
+                    next_period_cnt <= period_cnt + 1;
+                end if;
+                if valid_period = '1' and period_cnt = INPUT_LAYER_SIZE-1 then
+                    period_reg_en <= '1';
+                    next_period_cnt <= (others => '0');
+                    next_ctrl_rdy <= '0';
+                    next_per_state <= wait_sim;
+                end if;
+                if rl_ready = '0' then
+                    next_ctrl_rdy <= '0';
+                end if;
+            when wait_sim =>    -- Waits until a simulation is not running in order to sotre the periods in the SNN
+                if sim_active = '0' then
+                    next_start_sim <= '1';
+                    next_per_store <= '1';
+                    next_ctrl_rdy <= '1';
+                    next_per_state <= idle;
+                end if;
+            when others =>
+                next_per_state <= idle;
+                next_period_cnt <= (others => '0');
+                next_ctrl_rdy <= '1';
+        end case;
+    end process;
+    
+    -- Process for managing the SNN learning
+    proc_SNN : process(current_SNN_state, start_sim, step_finish, step_num_reg, spikes_out, start_step, sim_active, winner_neuron_reg)
+    begin
+        next_SNN_state <= current_SNN_state;
+        next_start_step <= '0';
+        next_sim_active <= sim_active;
+        next_step_num <= step_num_reg;
+        next_valid_winner <= '0';
+        next_winner <= winner_neuron_reg;
+        case current_SNN_state is
+            when idle =>        -- Waits for the period control to signal that all the period are stored and the simulation can start
+                if start_sim = '1' then
+                    next_start_step <= '1';
+                    next_sim_active <= '1';
+                    next_SNN_state <= sim_no_win;
+                end if;
+            when sim_no_win =>  -- Manages the simulation until an output layer neuron wins. If there is no winner, stores a 0 in the winner neuron
+                if step_finish = '1' and step_num_reg < STEPS-1 and to_integer(unsigned(spikes_out)) = 0 then
+                    next_step_num <= step_num_reg + 1;
+                    next_start_step <= '1';
+                end if;
+                if step_finish = '1' and step_num_reg < STEPS-1 and to_integer(unsigned(spikes_out)) /= 0 then
+                    next_step_num <= step_num_reg + 1;
+                    next_start_step <= '1';
+                    next_winner <= (others => '0');
+                    for i in OUTPUT_LAYER_SIZE-1 downto 0 loop  -- Stores the index of the lower winner neuron
+                        if spikes_out(i) = '1' then
+                            next_winner <= std_logic_vector(to_unsigned(i+1,next_winner'length));
+                        end if;
+                    end loop;                    
+                    next_SNN_state <= sim_win;
+                end if;
+                if step_finish = '1' and step_num_reg = STEPS-1 then
+                    next_step_num <= step_num_reg + 1;
+                    next_start_step <= '1';
+                    next_winner <= (others => '0');
+                    for i in OUTPUT_LAYER_SIZE-1 downto 0 loop  -- Stores the index of the lower winner neuron
+                        if spikes_out(i) = '1' then
+                            next_winner <= std_logic_vector(to_unsigned(i+1,next_winner'length));
+                        end if;
+                    end loop;
+                    next_valid_winner <= '1';
+                    next_SNN_state <= end_sim;
+                end if;
+            when sim_win =>     -- Manages the simulation after an output layer neuron has won. 
+                if step_finish = '1' and step_num_reg < STEPS-1 then
+                    next_step_num <= step_num_reg + 1;
+                    next_start_step <= '1';
+                end if;
+                if step_finish = '1' and step_num_reg = STEPS-1 then
+                    next_step_num <= step_num_reg + 1;
+                    next_start_step <= '1';
+                    next_valid_winner <= '1';
+                    next_SNN_state <= end_sim;
+                end if;
+            when end_sim =>     -- Returns to idle when the final step has finished, and resets
+                if step_finish = '1' then
+                    next_step_num <= (others => '0');
+                    next_winner <= (others => '0');
+                    next_sim_active <= '0';
+                    next_SNN_state <= idle;
+                end if;
+            when others =>
+                next_SNN_state <= idle;
+                next_sim_active <= '0';
+                next_step_num <= (others => '0');
+                next_winner <= (others => '0');
+        end case;
+    end process;
+    
+    period_out <= period_reg;
+    nxt_img_ready <= rl_ready and ctrl_rdy;   -- Tells the uP that is ready only when both the receptive layer and the control are.
+    winner_neuron <= winner_neuron_reg;
+    step_num <= step_num_reg;
+    
+end behaviour;
+        
