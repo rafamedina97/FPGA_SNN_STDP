@@ -1,0 +1,16 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2019.2.1 (win64) Build 2729669 Thu Dec  5 04:49:17 MST 2019
+| Date              : Mon Jun 29 20:06:26 2020
+| Host              : DESKTOP-II1MO1M running 64-bit major release  (build 9200)
+| Command           : report_bus_skew -warn_on_violation -file top_SNN_uart_bus_skew_routed.rpt -pb top_SNN_uart_bus_skew_routed.pb -rpx top_SNN_uart_bus_skew_routed.rpx
+| Design            : top_SNN_uart
+| Device            : xczu7ev-ffvc1156
+| Speed File        : -2  PRODUCTION 1.26 08-13-2019
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

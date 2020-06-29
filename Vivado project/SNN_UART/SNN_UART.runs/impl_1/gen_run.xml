@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1593450558">
+  <File Type="BITSTR-BMM" Name="top_SNN_uart_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="top_SNN_uart_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="top_SNN_uart_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="top_SNN_uart_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="top_SNN_uart.tcl"/>
+  <File Type="OPT-TIMING" Name="top_SNN_uart_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="top_SNN_uart_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="top_SNN_uart_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="top_SNN_uart_reports.tcl"/>
+  <File Type="OPT-DRC" Name="top_SNN_uart_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="top_SNN_uart.hwdef"/>
+  <File Type="PWROPT-DCP" Name="top_SNN_uart_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="top_SNN_uart_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="top_SNN_uart_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="top_SNN_uart_placed.dcp"/>
+  <File Type="PLACE-IO" Name="top_SNN_uart_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="top_SNN_uart_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="top_SNN_uart_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="top_SNN_uart_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="top_SNN_uart_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="top_SNN_uart_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="top_SNN_uart_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="top_SNN_uart_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="top_SNN_uart_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="top_SNN_uart.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="top_SNN_uart_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="top_SNN_uart_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="top_SNN_uart_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="top_SNN_uart.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="top_SNN_uart_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="top_SNN_uart_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="top_SNN_uart_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="top_SNN_uart_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="top_SNN_uart_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="top_SNN_uart_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="top_SNN_uart_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="top_SNN_uart.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_SNN_uart_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_SNN_uart_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_SNN_uart_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="top_SNN_uart_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="top_SNN_uart_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="top_SNN_uart_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="top_SNN_uart_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="top_SNN_uart_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="top_SNN_uart_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="top_SNN_uart_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="top_SNN_uart_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="top_SNN_uart_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="top_SNN_uart_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="top_SNN_uart_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_SNN_uart_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_SNN_uart_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_SNN_uart_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_SNN_uart_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="top_SNN_uart_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="top_SNN_uart_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="top_SNN_uart_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="top_SNN_uart.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="top_SNN_uart_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="top_SNN_uart.rbt"/>
+  <File Type="BITSTR-NKY" Name="top_SNN_uart.nky"/>
+  <File Type="PDI-FILE" Name="top_SNN_uart.pdi"/>
+  <File Type="RCFI_FILE" Name="top_SNN_uart.rcfi"/>
+  <File Type="CFI_FILE" Name="top_SNN_uart.cfi"/>
+  <File Type="RNPI_FILE" Name="top_SNN_uart.rnpi"/>
+  <File Type="NPI_FILE" Name="top_SNN_uart.npi"/>
+  <File Type="RBD_FILE" Name="top_SNN_uart.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="top_SNN_uart.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="top_SNN_uart.sysdef"/>
+  <File Type="BG-BGN" Name="top_SNN_uart.bgn"/>
+  <File Type="BG-DRC" Name="top_SNN_uart.drc"/>
+  <File Type="RDI-RDI" Name="top_SNN_uart.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/Convolution.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/Convolution.v"/>
+        <Attr Name="ImportTime" Val="1593079351"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/sum_conv_pipeline.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/sum_conv_pipeline.v"/>
+        <Attr Name="ImportTime" Val="1592476550"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/log2_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/log2_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1590141643"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/log2_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/function_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/function_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1592303674"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/param_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/param_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1592393667"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/LIF.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/LIF.vhd"/>
+        <Attr Name="ImportTime" Val="1590140346"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/LI_register.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/LI_register.vhd"/>
+        <Attr Name="ImportTime" Val="1590139174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/LUTRAM_exp.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/LUTRAM_exp.vhd"/>
+        <Attr Name="ImportTime" Val="1590140297"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Sum.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/Sum.vhd"/>
+        <Attr Name="ImportTime" Val="1589797594"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UART_RX_driver.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/adders_STDP.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/adders_STDP.vhd"/>
+        <Attr Name="ImportTime" Val="1590140318"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/rl_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/rl_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1591613059"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/int_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/int_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1588241480"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/bare_SNN.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/bare_SNN.vhd"/>
+        <Attr Name="ImportTime" Val="1590577107"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/barrel_shifter.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/barrel_shifter.vhd"/>
+        <Attr Name="ImportTime" Val="1590140338"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/driven_uart.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fifo.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/fixed_shifter.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/fixed_shifter.vhd"/>
+        <Attr Name="ImportTime" Val="1590140333"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/general_control.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/general_control.vhd"/>
+        <Attr Name="ImportTime" Val="1591613091"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/hidden_layer.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/hidden_layer.vhd"/>
+        <Attr Name="ImportTime" Val="1590576971"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/input_layer.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/input_layer.vhd"/>
+        <Attr Name="ImportTime" Val="1590139015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/input_layer_control.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/input_layer_control.vhd"/>
+        <Attr Name="ImportTime" Val="1590139019"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/input_neuron.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/input_neuron.vhd"/>
+        <Attr Name="ImportTime" Val="1590139029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/input_neuron_core.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/input_neuron_core.vhd"/>
+        <Attr Name="ImportTime" Val="1589448515"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/inter_layer_reg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/inter_layer_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1590139155"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/interpolation.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/interpolation.vhd"/>
+        <Attr Name="ImportTime" Val="1591613103"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/kernel_mult.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/kernel_mult.vhd"/>
+        <Attr Name="ImportTime" Val="1593098893"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/layer_control.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/layer_control.vhd"/>
+        <Attr Name="ImportTime" Val="1590139179"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mod_m.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/network_control.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/network_control.vhd"/>
+        <Attr Name="ImportTime" Val="1592145665"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/one_neuron.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/one_neuron.vhd"/>
+        <Attr Name="ImportTime" Val="1592304683"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/output_layer.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/output_layer.vhd"/>
+        <Attr Name="ImportTime" Val="1590577012"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/prev_spikes_reg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/prev_spikes_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1590140289"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/spike_train.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/spike_train.vhd"/>
+        <Attr Name="ImportTime" Val="1591613087"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/syn_mem_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/syn_mem_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1592653598"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/synaptic_mem.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/synaptic_mem.vhd"/>
+        <Attr Name="ImportTime" Val="1592304688"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/tau_counter.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/tau_counter.vhd"/>
+        <Attr Name="ImportTime" Val="1590140325"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/top_rl_SNN.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/top_rl_SNN.vhd"/>
+        <Attr Name="ImportTime" Val="1590049634"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_rx.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_tx.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_SNN_uart.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UART_test.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../bare_SNN/bare_SNN.srcs/sources_1/new/dummy_ram_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_SNN_uart"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/zcu104.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>

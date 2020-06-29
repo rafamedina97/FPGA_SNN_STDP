@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:49:17 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Mon Jun 29 19:28:23 2020
+# Process ID: 14168
+# Current directory: C:/Users/rafam/VivadoProjects/SNN_UART/SNN_UART.runs/impl_1
+# Command line: vivado.exe -log top_SNN_uart.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_SNN_uart.tcl -notrace
+# Log file: C:/Users/rafam/VivadoProjects/SNN_UART/SNN_UART.runs/impl_1/top_SNN_uart.vdi
+# Journal file: C:/Users/rafam/VivadoProjects/SNN_UART/SNN_UART.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_SNN_uart.tcl -notrace

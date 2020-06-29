@@ -1,0 +1,462 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (win64) Build 2729669 Thu Dec  5 04:49:17 MST 2019
+| Date         : Mon Jun 29 20:05:11 2020
+| Host         : DESKTOP-II1MO1M running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_SNN_uart_methodology_drc_routed.rpt -pb top_SNN_uart_methodology_drc_routed.pb -rpx top_SNN_uart_methodology_drc_routed.rpx
+| Design       : top_SNN_uart
+| Device       : xczu7ev-ffvc1156-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 85
++----------+----------+---------------------------------------------+------------+
+| Rule     | Severity | Description                                 | Violations |
++----------+----------+---------------------------------------------+------------+
+| DPIR-2   | Warning  | Asynchronous driver check                   | 78         |
+| SYNTH-12 | Warning  | DSP input not registered                    | 6          |
+| ULMTCS-1 | Warning  | Control Sets use limits recommend reduction | 1          |
++----------+----------+---------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIR-2#1 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#2 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#3 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#4 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#5 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#6 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#7 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#8 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#9 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#10 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#11 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#12 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#13 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#14 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#15 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#16 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#17 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#18 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#19 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#20 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#21 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#22 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#23 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#24 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#25 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#26 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#27 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#28 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#29 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#30 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/interpolation/m_divmult input pin U_SNN/U_RL/interpolation/m_divmult/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#31 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult11 input pin U_SNN/U_RL/k_mult/mult11/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#32 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult11 input pin U_SNN/U_RL/k_mult/mult11/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#33 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult11 input pin U_SNN/U_RL/k_mult/mult11/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#34 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult11 input pin U_SNN/U_RL/k_mult/mult11/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#35 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult11 input pin U_SNN/U_RL/k_mult/mult11/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#36 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult11 input pin U_SNN/U_RL/k_mult/mult11/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#37 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult11 input pin U_SNN/U_RL/k_mult/mult11/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#38 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult11 input pin U_SNN/U_RL/k_mult/mult11/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#39 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult13 input pin U_SNN/U_RL/k_mult/mult13/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#40 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult13 input pin U_SNN/U_RL/k_mult/mult13/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#41 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult13 input pin U_SNN/U_RL/k_mult/mult13/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#42 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult13 input pin U_SNN/U_RL/k_mult/mult13/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#43 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult13 input pin U_SNN/U_RL/k_mult/mult13/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#44 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult13 input pin U_SNN/U_RL/k_mult/mult13/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#45 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult13 input pin U_SNN/U_RL/k_mult/mult13/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#46 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult13 input pin U_SNN/U_RL/k_mult/mult13/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#47 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult17 input pin U_SNN/U_RL/k_mult/mult17/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#48 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult17 input pin U_SNN/U_RL/k_mult/mult17/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#49 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult17 input pin U_SNN/U_RL/k_mult/mult17/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#50 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult17 input pin U_SNN/U_RL/k_mult/mult17/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#51 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult17 input pin U_SNN/U_RL/k_mult/mult17/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#52 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult17 input pin U_SNN/U_RL/k_mult/mult17/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#53 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult17 input pin U_SNN/U_RL/k_mult/mult17/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#54 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult17 input pin U_SNN/U_RL/k_mult/mult17/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#55 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult7 input pin U_SNN/U_RL/k_mult/mult7/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#56 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult7 input pin U_SNN/U_RL/k_mult/mult7/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#57 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult7 input pin U_SNN/U_RL/k_mult/mult7/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#58 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult7 input pin U_SNN/U_RL/k_mult/mult7/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#59 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult7 input pin U_SNN/U_RL/k_mult/mult7/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#60 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult7 input pin U_SNN/U_RL/k_mult/mult7/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#61 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult7 input pin U_SNN/U_RL/k_mult/mult7/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#62 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/k_mult/mult7 input pin U_SNN/U_RL/k_mult/mult7/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#63 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#64 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#65 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#66 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#67 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#68 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#69 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#70 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#71 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#72 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#73 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#74 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#75 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#76 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#77 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#78 Warning
+Asynchronous driver check  
+DSP U_SNN/U_RL/spike_train/mult_res input pin U_SNN/U_RL/spike_train/mult_res/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+SYNTH-12#1 Warning
+DSP input not registered  
+DSP instance U_SNN/U_RL/interpolation/m_divmult is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+Related violations: <none>
+
+SYNTH-12#2 Warning
+DSP input not registered  
+DSP instance U_SNN/U_RL/k_mult/mult11 is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+Related violations: <none>
+
+SYNTH-12#3 Warning
+DSP input not registered  
+DSP instance U_SNN/U_RL/k_mult/mult13 is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+Related violations: <none>
+
+SYNTH-12#4 Warning
+DSP input not registered  
+DSP instance U_SNN/U_RL/k_mult/mult17 is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+Related violations: <none>
+
+SYNTH-12#5 Warning
+DSP input not registered  
+DSP instance U_SNN/U_RL/k_mult/mult7 is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+Related violations: <none>
+
+SYNTH-12#6 Warning
+DSP input not registered  
+DSP instance U_SNN/U_RL/spike_train/mult_res is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+Related violations: <none>
+
+ULMTCS-1#1 Warning
+Control Sets use limits recommend reduction  
+This design uses 3748 control sets (vs. available limit of 28800, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
+Related violations: <none>
+
+
